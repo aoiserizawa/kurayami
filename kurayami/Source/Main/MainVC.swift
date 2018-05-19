@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, UIGestureRecognizerDelegate {
+class MainVC: UIViewController {
     
     // MARK: Intializer
     public init() {
@@ -36,7 +36,7 @@ class MainVC: UIViewController, UIGestureRecognizerDelegate {
 //        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAction(_:)))
 //        tap.numberOfTouchesRequired = 2
 //        self.rootView.addGestureRecognizer(tap)
-        
+//
     }
 
     // MARK: Stored Properties
@@ -69,16 +69,6 @@ extension MainVC {
         }
     }
     
-    
-    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        
-        if gestureRecognizer == self.circleView.pinchRecognizer {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     @objc func pinchAction(_ sender: UIPinchGestureRecognizer){
         print("PINCHING")
         let scale = sender.scale
@@ -91,6 +81,7 @@ extension MainVC {
 extension MainVC {
     
     func addCircle(gesture: UIGestureRecognizer) {
+        
         let tapPoint = gesture.location(in: self.rootView)
         
         let pinchRecog: UIPinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(_:)))
@@ -102,3 +93,10 @@ extension MainVC {
         self.rootView.addSubview(self.circleView)
     }
 }
+
+extension MainVC: UIGestureRecognizerDelegate {
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+}
+
