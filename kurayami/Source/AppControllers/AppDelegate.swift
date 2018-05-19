@@ -11,11 +11,16 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
+    
+    fileprivate let rootViewController: UINavigationController = UINavigationController()
 
-
+    fileprivate lazy var  appCoordinator: AppCoordinator = AppCoordinator(window: self.window!, rootViewController: self.rootViewController)
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        self.appCoordinator.start()
+        
         return true
     }
 

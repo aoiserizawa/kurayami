@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C080BFD20A97FBF000AE171 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C080BFC20A97FBF000AE171 /* ShapeView.swift */; };
 		7C7DC13520A1E9B50050D54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC13420A1E9B50050D54A /* AppDelegate.swift */; };
-		7C7DC13720A1E9B50050D54A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC13620A1E9B50050D54A /* ViewController.swift */; };
+		7C7DC13720A1E9B50050D54A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC13620A1E9B50050D54A /* MainVC.swift */; };
 		7C7DC13A20A1E9B50050D54A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7DC13820A1E9B50050D54A /* Main.storyboard */; };
 		7C7DC13C20A1E9B60050D54A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C7DC13B20A1E9B60050D54A /* Assets.xcassets */; };
 		7C7DC13F20A1E9B60050D54A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7DC13D20A1E9B60050D54A /* LaunchScreen.storyboard */; };
 		7C7DC14A20A1E9B60050D54A /* kurayamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC14920A1E9B60050D54A /* kurayamiTests.swift */; };
 		7C7DC15520A1E9B60050D54A /* kurayamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC15420A1E9B60050D54A /* kurayamiUITests.swift */; };
+		7C7DC16920A1EE960050D54A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC16820A1EE960050D54A /* Coordinator.swift */; };
+		7C7DC16D20A1EF560050D54A /* AbstractCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC16C20A1EF560050D54A /* AbstractCoordinator.swift */; };
+		7C7DC16F20A1F18B0050D54A /* Subclasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC16E20A1F18B0050D54A /* Subclasses.swift */; };
+		7C7DC17120A1F3730050D54A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC17020A1F3730050D54A /* MainCoordinator.swift */; };
+		7C7DC17320A1F7C80050D54A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC17220A1F7C80050D54A /* AppCoordinator.swift */; };
+		7C7DC17520A1FE380050D54A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC17420A1FE380050D54A /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C080BFC20A97FBF000AE171 /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		7C7DC13120A1E9B50050D54A /* kurayami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kurayami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7DC13420A1E9B50050D54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7C7DC13620A1E9B50050D54A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7C7DC13620A1E9B50050D54A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		7C7DC13920A1E9B50050D54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C7DC13B20A1E9B60050D54A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C7DC13E20A1E9B60050D54A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,12 @@
 		7C7DC15020A1E9B60050D54A /* kurayamiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kurayamiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7DC15420A1E9B60050D54A /* kurayamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kurayamiUITests.swift; sourceTree = "<group>"; };
 		7C7DC15620A1E9B60050D54A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C7DC16820A1EE960050D54A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7C7DC16C20A1EF560050D54A /* AbstractCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractCoordinator.swift; sourceTree = "<group>"; };
+		7C7DC16E20A1F18B0050D54A /* Subclasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subclasses.swift; sourceTree = "<group>"; };
+		7C7DC17020A1F3730050D54A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		7C7DC17220A1F7C80050D54A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7C7DC17420A1FE380050D54A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +111,7 @@
 		7C7DC13320A1E9B50050D54A /* kurayami */ = {
 			isa = PBXGroup;
 			children = (
-				7C7DC13420A1E9B50050D54A /* AppDelegate.swift */,
-				7C7DC13620A1E9B50050D54A /* ViewController.swift */,
-				7C7DC13820A1E9B50050D54A /* Main.storyboard */,
-				7C7DC13B20A1E9B60050D54A /* Assets.xcassets */,
-				7C7DC13D20A1E9B60050D54A /* LaunchScreen.storyboard */,
-				7C7DC14020A1E9B60050D54A /* Info.plist */,
+				7C7DC16220A1EA0D0050D54A /* Source */,
 			);
 			path = kurayami;
 			sourceTree = "<group>";
@@ -123,6 +132,74 @@
 				7C7DC15620A1E9B60050D54A /* Info.plist */,
 			);
 			path = kurayamiUITests;
+			sourceTree = "<group>";
+		};
+		7C7DC16220A1EA0D0050D54A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC16620A1EE0E0050D54A /* Utilities */,
+				7C7DC16520A1EAD70050D54A /* Main */,
+				7C7DC16420A1EA700050D54A /* AppControllers */,
+				7C7DC16320A1EA300050D54A /* Supporting Files */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		7C7DC16320A1EA300050D54A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC13B20A1E9B60050D54A /* Assets.xcassets */,
+				7C7DC13D20A1E9B60050D54A /* LaunchScreen.storyboard */,
+				7C7DC13820A1E9B50050D54A /* Main.storyboard */,
+				7C7DC14020A1E9B60050D54A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7C7DC16420A1EA700050D54A /* AppControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC13420A1E9B50050D54A /* AppDelegate.swift */,
+				7C7DC17220A1F7C80050D54A /* AppCoordinator.swift */,
+			);
+			path = AppControllers;
+			sourceTree = "<group>";
+		};
+		7C7DC16520A1EAD70050D54A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC13620A1E9B50050D54A /* MainVC.swift */,
+				7C7DC17020A1F3730050D54A /* MainCoordinator.swift */,
+				7C7DC17420A1FE380050D54A /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7C7DC16620A1EE0E0050D54A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC16A20A1EF020050D54A /* Class */,
+				7C7DC16720A1EE1F0050D54A /* Procotols */,
+				7C7DC16E20A1F18B0050D54A /* Subclasses.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7C7DC16720A1EE1F0050D54A /* Procotols */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC16820A1EE960050D54A /* Coordinator.swift */,
+			);
+			path = Procotols;
+			sourceTree = "<group>";
+		};
+		7C7DC16A20A1EF020050D54A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7C7DC16C20A1EF560050D54A /* AbstractCoordinator.swift */,
+				7C080BFC20A97FBF000AE171 /* ShapeView.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +333,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C7DC13720A1E9B50050D54A /* ViewController.swift in Sources */,
+				7C7DC16D20A1EF560050D54A /* AbstractCoordinator.swift in Sources */,
+				7C7DC17520A1FE380050D54A /* MainView.swift in Sources */,
+				7C7DC17120A1F3730050D54A /* MainCoordinator.swift in Sources */,
+				7C080BFD20A97FBF000AE171 /* ShapeView.swift in Sources */,
+				7C7DC13720A1E9B50050D54A /* MainVC.swift in Sources */,
+				7C7DC16F20A1F18B0050D54A /* Subclasses.swift in Sources */,
 				7C7DC13520A1E9B50050D54A /* AppDelegate.swift in Sources */,
+				7C7DC16920A1EE960050D54A /* Coordinator.swift in Sources */,
+				7C7DC17320A1F7C80050D54A /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +515,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = kurayami/Info.plist;
+				DEVELOPMENT_TEAM = 3S4MHP69HY;
+				INFOPLIST_FILE = "kurayami/Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +533,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = kurayami/Info.plist;
+				DEVELOPMENT_TEAM = 3S4MHP69HY;
+				INFOPLIST_FILE = "kurayami/Source/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
