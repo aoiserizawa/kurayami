@@ -1,0 +1,6 @@
+framework module Kio {
+  umbrella header "Kio-umbrella.h"
+
+  export *
+  module * { export * }
+}

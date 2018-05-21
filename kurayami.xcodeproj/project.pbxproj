@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B0BAA8566206129DB40126 /* Pods_kurayami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6861154668EC041E5BF48C7D /* Pods_kurayami.framework */; };
 		7C080BFD20A97FBF000AE171 /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C080BFC20A97FBF000AE171 /* ShapeView.swift */; };
 		7C7DC13520A1E9B50050D54A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC13420A1E9B50050D54A /* AppDelegate.swift */; };
 		7C7DC13720A1E9B50050D54A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC13620A1E9B50050D54A /* MainVC.swift */; };
@@ -21,6 +22,8 @@
 		7C7DC17120A1F3730050D54A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC17020A1F3730050D54A /* MainCoordinator.swift */; };
 		7C7DC17320A1F7C80050D54A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC17220A1F7C80050D54A /* AppCoordinator.swift */; };
 		7C7DC17520A1FE380050D54A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7DC17420A1FE380050D54A /* MainView.swift */; };
+		A47C040B809303FA68B5569D /* Pods_kurayamiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946AF0ECD3BA8DAC673A4441 /* Pods_kurayamiUITests.framework */; };
+		EA133337128FF7E578262A25 /* Pods_kurayamiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C610FB0EA07BF6A8DAFC9D /* Pods_kurayamiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F9557310BD369165279F711 /* Pods-kurayami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kurayami.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kurayami/Pods-kurayami.debug.xcconfig"; sourceTree = "<group>"; };
+		3EB6E9D3779E78882B7ED39A /* Pods-kurayami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kurayami.release.xcconfig"; path = "Pods/Target Support Files/Pods-kurayami/Pods-kurayami.release.xcconfig"; sourceTree = "<group>"; };
+		6861154668EC041E5BF48C7D /* Pods_kurayami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kurayami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C080BFC20A97FBF000AE171 /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		7C7DC13120A1E9B50050D54A /* kurayami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kurayami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C7DC13420A1E9B50050D54A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,12 @@
 		7C7DC17020A1F3730050D54A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		7C7DC17220A1F7C80050D54A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7C7DC17420A1FE380050D54A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		7DD307D3D16B494AA84C0EF5 /* Pods-kurayamiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kurayamiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kurayamiTests/Pods-kurayamiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		80C610FB0EA07BF6A8DAFC9D /* Pods_kurayamiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kurayamiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		946AF0ECD3BA8DAC673A4441 /* Pods_kurayamiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kurayamiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF5635B719BA45D61D9F700 /* Pods-kurayamiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kurayamiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kurayamiUITests/Pods-kurayamiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D6F0133EF32A67E2EEF3EB1 /* Pods-kurayamiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kurayamiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kurayamiUITests/Pods-kurayamiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE941907B3EC7854C6915BE1 /* Pods-kurayamiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kurayamiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-kurayamiTests/Pods-kurayamiTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B0BAA8566206129DB40126 /* Pods_kurayami.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA133337128FF7E578262A25 /* Pods_kurayamiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A47C040B809303FA68B5569D /* Pods_kurayamiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +110,8 @@
 				7C7DC14820A1E9B60050D54A /* kurayamiTests */,
 				7C7DC15320A1E9B60050D54A /* kurayamiUITests */,
 				7C7DC13220A1E9B50050D54A /* Products */,
+				8AB5399CDC45D63694726ED0 /* Pods */,
+				E19DBC6B9527045C3DB89CCA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +219,29 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
+		8AB5399CDC45D63694726ED0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F9557310BD369165279F711 /* Pods-kurayami.debug.xcconfig */,
+				3EB6E9D3779E78882B7ED39A /* Pods-kurayami.release.xcconfig */,
+				7DD307D3D16B494AA84C0EF5 /* Pods-kurayamiTests.debug.xcconfig */,
+				BE941907B3EC7854C6915BE1 /* Pods-kurayamiTests.release.xcconfig */,
+				9CF5635B719BA45D61D9F700 /* Pods-kurayamiUITests.debug.xcconfig */,
+				9D6F0133EF32A67E2EEF3EB1 /* Pods-kurayamiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E19DBC6B9527045C3DB89CCA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6861154668EC041E5BF48C7D /* Pods_kurayami.framework */,
+				80C610FB0EA07BF6A8DAFC9D /* Pods_kurayamiTests.framework */,
+				946AF0ECD3BA8DAC673A4441 /* Pods_kurayamiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C7DC15920A1E9B60050D54A /* Build configuration list for PBXNativeTarget "kurayami" */;
 			buildPhases = (
+				2E79C587D4EA3E4BF26D8000 /* [CP] Check Pods Manifest.lock */,
 				7C7DC12D20A1E9B50050D54A /* Sources */,
 				7C7DC12E20A1E9B50050D54A /* Frameworks */,
 				7C7DC12F20A1E9B50050D54A /* Resources */,
+				BE044186A87A50F6C444DBAC /* [CP] Embed Pods Frameworks */,
+				FC7A880B5944E16F3308DB4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -226,9 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C7DC15C20A1E9B60050D54A /* Build configuration list for PBXNativeTarget "kurayamiTests" */;
 			buildPhases = (
+				CABE55431EF1719D8C0DB6C3 /* [CP] Check Pods Manifest.lock */,
 				7C7DC14120A1E9B60050D54A /* Sources */,
 				7C7DC14220A1E9B60050D54A /* Frameworks */,
 				7C7DC14320A1E9B60050D54A /* Resources */,
+				FCE70AEE10C7B6E24FED4E1C /* [CP] Embed Pods Frameworks */,
+				2D9DE6E1383A1C31D76E7E2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,9 +290,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C7DC15F20A1E9B60050D54A /* Build configuration list for PBXNativeTarget "kurayamiUITests" */;
 			buildPhases = (
+				BC40B38A0E601F93753E62F5 /* [CP] Check Pods Manifest.lock */,
 				7C7DC14C20A1E9B60050D54A /* Sources */,
 				7C7DC14D20A1E9B60050D54A /* Frameworks */,
 				7C7DC14E20A1E9B60050D54A /* Resources */,
+				C50A0B0C57D8C7EBD4D1649F /* [CP] Embed Pods Frameworks */,
+				65E3FB986B2D58D40F21DB33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -327,6 +376,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D9DE6E1383A1C31D76E7E2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kurayamiTests/Pods-kurayamiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E79C587D4EA3E4BF26D8000 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kurayami-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65E3FB986B2D58D40F21DB33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kurayamiUITests/Pods-kurayamiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC40B38A0E601F93753E62F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kurayamiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE044186A87A50F6C444DBAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-kurayami/Pods-kurayami-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kio/Kio.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kio.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kurayami/Pods-kurayami-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50A0B0C57D8C7EBD4D1649F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kurayamiUITests/Pods-kurayamiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CABE55431EF1719D8C0DB6C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kurayamiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC7A880B5944E16F3308DB4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kurayami/Pods-kurayami-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCE70AEE10C7B6E24FED4E1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kurayamiTests/Pods-kurayamiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C7DC12D20A1E9B50050D54A /* Sources */ = {
@@ -512,15 +713,13 @@
 		};
 		7C7DC15A20A1E9B60050D54A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F9557310BD369165279F711 /* Pods-kurayami.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3S4MHP69HY;
 				INFOPLIST_FILE = "kurayami/Source/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hero.kurayami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -530,15 +729,13 @@
 		};
 		7C7DC15B20A1E9B60050D54A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB6E9D3779E78882B7ED39A /* Pods-kurayami.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3S4MHP69HY;
 				INFOPLIST_FILE = "kurayami/Source/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hero.kurayami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -548,16 +745,13 @@
 		};
 		7C7DC15D20A1E9B60050D54A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DD307D3D16B494AA84C0EF5 /* Pods-kurayamiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kurayamiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hero.kurayamiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -568,16 +762,13 @@
 		};
 		7C7DC15E20A1E9B60050D54A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE941907B3EC7854C6915BE1 /* Pods-kurayamiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kurayamiTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hero.kurayamiTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,15 +779,12 @@
 		};
 		7C7DC16020A1E9B60050D54A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CF5635B719BA45D61D9F700 /* Pods-kurayamiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kurayamiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hero.kurayamiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -607,15 +795,12 @@
 		};
 		7C7DC16120A1E9B60050D54A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D6F0133EF32A67E2EEF3EB1 /* Pods-kurayamiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = kurayamiUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hero.kurayamiUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -32,11 +32,13 @@ class MainVC: UIViewController {
         longpressed.minimumPressDuration = 0
         longpressed.numberOfTouchesRequired = 2
         self.rootView.addGestureRecognizer(longpressed)
-        
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(didTapAction(_:)))
-//        tap.numberOfTouchesRequired = 2
-//        self.rootView.addGestureRecognizer(tap)
-//
+
+        self.rootView.button.addTarget(
+            self,
+            action: #selector(shareAction(_:)),
+            for: UIControlEvents.touchUpInside
+        )
+
     }
 
     // MARK: Stored Properties
@@ -74,6 +76,20 @@ extension MainVC {
         let scale = sender.scale
         self.circleView.transform = self.circleView.transform.scaledBy(x: scale, y: scale)
         sender.scale = 1.0
+    }
+
+    @objc func shareAction(_ sender: UIButton) {
+        let urlString = "https://www.google.com"
+
+        let linkToShare = [urlString]
+
+        let activityController = UIActivityViewController(activityItems: linkToShare, applicationActivities: nil)
+
+        self.present(activityController, animated: true) {
+            print("shared")
+        }
+
+        
     }
 }
 
