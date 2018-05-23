@@ -74,8 +74,20 @@ extension MainVC {
     @objc func pinchAction(_ sender: UIPinchGestureRecognizer){
         print("PINCHING")
         let scale = sender.scale
-        self.circleView.transform = self.circleView.transform.scaledBy(x: scale, y: scale)
+        
+        print(scale)
+        
+        let scaleTransform: CGAffineTransform = self.circleView.transform.scaledBy(x: scale, y: scale)
+        
+        if scaleTransform.d < 1.2 {
+            self.circleView.transform = scaleTransform
+        }
         sender.scale = 1.0
+        
+        print(self.scaleOf(transform: scaleTransform))
+        
+        
+        
     }
 
     @objc func shareAction(_ sender: UIButton) {
@@ -88,8 +100,6 @@ extension MainVC {
         self.present(activityController, animated: true) {
             print("shared")
         }
-
-        
     }
 }
 
@@ -108,6 +118,14 @@ extension MainVC {
         
         self.rootView.addSubview(self.circleView)
     }
+    
+    func scaleOf(transform: CGAffineTransform) -> CGPoint {
+        let xScale = sqrt(transform.a * transform.a + transform.c * transform.c)
+        let yScale = sqrt(transform.b * transform.b + transform.d * transform.d)
+        
+        return CGPoint(x: xScale, y: yScale)
+    }
+
 }
 
 extension MainVC: UIGestureRecognizerDelegate {

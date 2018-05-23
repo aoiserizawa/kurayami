@@ -11,7 +11,7 @@ import UIKit
 import CoreGraphics
 
 class ShapeView: UIView {
-    let size: CGFloat = 150.0
+    let size: CGFloat = 200.0
     
     var circleLayer: CAShapeLayer!
     var circlePath: UIBezierPath!
@@ -25,7 +25,7 @@ class ShapeView: UIView {
         super.init(frame: self.roundRect)
         self.center = origin
         
-        self.circlePath = UIBezierPath(roundedRect: self.roundRect, cornerRadius: 10)
+        self.circlePath = UIBezierPath(roundedRect: self.roundRect, cornerRadius: 100)
         
         self.circleLayer = CAShapeLayer()
         self.circleLayer.path = circlePath.cgPath
@@ -36,8 +36,6 @@ class ShapeView: UIView {
         
         // Add the circleLayer to the view's layer's sublayers
         layer.addSublayer(self.circleLayer)
-        
-//        self.initGestureRecognizers()
     }
     
     // We need to implement init(coder) to avoid compilation errors
