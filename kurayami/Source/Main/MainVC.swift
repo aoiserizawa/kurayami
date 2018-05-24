@@ -74,20 +74,34 @@ extension MainVC {
     @objc func pinchAction(_ sender: UIPinchGestureRecognizer){
         print("PINCHING")
         let scale = sender.scale
-        
-        print(scale)
-        
+        var fingersDistance: CGFloat = 0.0
+
+        print("number of touches \(sender.numberOfTouches)")
+
+        if sender.numberOfTouches >= 2 {
+            let firstFinger: CGPoint = sender.location(ofTouch: 0, in: nil)
+            let secondFinger: CGPoint = sender.location(ofTouch: 1, in: nil)
+
+            fingersDistance = self.distance(firstFinger, secondFinger)
+
+        }
+
         let scaleTransform: CGAffineTransform = self.circleView.transform.scaledBy(x: scale, y: scale)
         
-        if scaleTransform.d < 1.2 {
+        if scaleTransform.d < 1.2 && scaleTransform.d > 1 {
             self.circleView.transform = scaleTransform
         }
+
+        if fingersDistance >= 200.0 {
+            self.circleView.circleLayer.strokeColor = UIColor.green.cgColor
+        } else {
+            self.circleView.circleLayer.strokeColor = UIColor.red.cgColor
+        }
+
         sender.scale = 1.0
-        
-        print(self.scaleOf(transform: scaleTransform))
-        
-        
-        
+
+        print("fingersDistance \(fingersDistance)")
+
     }
 
     @objc func shareAction(_ sender: UIButton) {
@@ -115,7 +129,9 @@ extension MainVC {
         self.circleView = ShapeView(origin: tapPoint, pinchRecognizer: pinchRecog)
         self.circleView.pinchRecognizer.delegate = self
         self.rootView.addGestureRecognizer(pinchRecog)
+
         
+
         self.rootView.addSubview(self.circleView)
     }
     
@@ -124,6 +140,12 @@ extension MainVC {
         let yScale = sqrt(transform.b * transform.b + transform.d * transform.d)
         
         return CGPoint(x: xScale, y: yScale)
+    }
+
+    func distance(_ a: CGPoint, _ b: CGPoint) -> CGFloat {
+        let xDist = a.x - b.x
+        let yDist = a.y - b.y
+        return CGFloat(sqrt((xDist * xDist) + (yDist * yDist)))
     }
 
 }
